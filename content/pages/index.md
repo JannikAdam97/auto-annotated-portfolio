@@ -1,6 +1,7 @@
 ---
 type: PageLayout
 title: Home
+slug: index
 colors: colors-a
 backgroundImage:
   type: BackgroundImage
@@ -10,129 +11,66 @@ backgroundImage:
   backgroundRepeat: no-repeat
   opacity: 75
 sections:
-  - elementId: ''
+  - type: HeroSection
     colors: colors-f
     backgroundSize: full
-    title: >-
-      I’m a developer, digital artist, consultant and a bunch of other
-      impressive titles and buzz words.
-    subtitle: >-
-      This is my info—I’m sharing it all this with ya’ll to impress you with all
-      the hard work I’ve done in the past few years. Once you’re impressed, you
-      can continue to scroll down to see more details and credentials about me.
-    styles:
-      self:
-        height: auto
-        width: wide
-        margin:
-          - mt-0
-          - mb-0
-          - ml-0
-          - mr-0
-        padding:
-          - pt-36
-          - pb-48
-          - pl-4
-          - pr-4
-        flexDirection: row-reverse
-        textAlign: left
-    type: HeroSection
-    actions: []
-  - colors: colors-f
-    type: FeaturedProjectsSection
-    elementId: ''
-    actions:
-      - type: Link
-        label: See all projects
-        url: /projects
-    showDate: false
-    showDescription: true
-    showFeaturedImage: true
-    showReadMoreLink: true
-    variant: variant-b
-    projects:
-      - content/pages/projects/project-two.md
-      - content/pages/projects/project-three.md
-      - content/pages/projects/project-one.md
-    styles:
-      self:
-        height: auto
-        width: wide
-        padding:
-          - pt-24
-          - pb-24
-          - pl-4
-          - pr-4
-        textAlign: left
-    subtitle: Projects
-  - type: FeaturedPostsSection
-    elementId: ''
-    colors: colors-f
-    variant: variant-d
-    subtitle: Featured Posts
-    showFeaturedImage: false
-    actions:
-      - type: Link
-        label: See all posts
-        url: /blog
-    posts:
-      - content/pages/blog/post-six.md
-      - content/pages/blog/post-four.md
-      - content/pages/blog/post-three.md
-    showDate: true
-    showExcerpt: true
-    showReadMoreLink: true
+    text: |+
+      # Hello, my name is Jannik.
+      # I'm an IT Consultant and Senior SAP Developer.
+      ### Nice to meet you.
     styles:
       self:
         height: auto
         width: narrow
         padding:
-          - pt-28
-          - pb-48
+          - pt-36
+          - pb-16
           - pl-4
           - pr-4
+        flexDirection: row-reverse
         textAlign: left
   - type: ContactSection
     colors: colors-f
     backgroundSize: full
-    title: "Got an interesting project? Tell me more...\U0001F4AC"
+    title: Got an interesting project?
     form:
       type: FormBlock
       elementId: sign-up-form
       fields:
-        - name: firstName
+        - type: TextFormControl
+          name: firstName
           label: First Name
           hideLabel: true
-          placeholder: First Name
+          placeholder: First Name *
           isRequired: true
           width: 1/2
-          type: TextFormControl
-        - name: lastName
+        - type: TextFormControl
+          name: lastName
           label: Last Name
           hideLabel: true
-          placeholder: Last Name
+          placeholder: Last Name *
           isRequired: false
           width: 1/2
-          type: TextFormControl
-        - name: email
+        - type: EmailFormControl
+          name: email
           label: Email
           hideLabel: true
-          placeholder: Email
+          placeholder: Email *
           isRequired: true
           width: 1/2
-          type: EmailFormControl
-        - name: address
-          label: Address
+        - type: TextFormControl
+          name: company
+          label: Company, Organization, Institution
           hideLabel: true
-          placeholder: Address
-          isRequired: true
+          placeholder: Company, Organization, Institution
           width: 1/2
-          type: TextFormControl
-        - name: updatesConsent
-          label: Sign me up to recieve updates
-          isRequired: false
+        - type: TextareaFormControl
+          name: Message
+          label: Message
+          hideLabel: false
+          placeholder: Tell me more... 💬
           width: full
-          type: CheckboxFormControl
+          isRequired: false
       submitLabel: "Submit \U0001F680"
       styles:
         self:
@@ -141,16 +79,19 @@ sections:
       self:
         height: auto
         width: narrow
-        margin:
-          - mt-0
-          - mb-0
-          - ml-0
-          - mr-0
         padding:
           - pt-24
-          - pb-24
+          - pb-4
           - pr-4
           - pl-4
+        flexDirection: row
+        textAlign: left
+  - type: CtaSection
+    text: By submitting this form I accept the [Privacy Policy](/privacy).
+    styles:
+      self:
+        height: auto
+        width: narrow
         flexDirection: row
         textAlign: left
 ---

@@ -13,6 +13,12 @@ export const PageLayoutModel: Model = {
     fields: [
         {
             type: 'string',
+            name: 'slug',
+            label: 'Slug',
+            required: true
+        },
+        {
+            type: 'string',
             name: 'title',
             label: 'Title',
             default: 'This is a new page',

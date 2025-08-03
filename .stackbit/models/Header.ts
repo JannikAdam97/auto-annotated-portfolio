@@ -54,9 +54,9 @@ export const HeaderModel: Model = {
                 },
                 {
                     type: 'Link',
-                    label: 'Blog',
-                    url: '/',
-                    altText: 'Blog'
+                    label: 'About',
+                    url: '/about',
+                    altText: 'About'
                 }
             ]
         },
@@ -72,16 +72,9 @@ export const HeaderModel: Model = {
                 {
                     type: 'Social',
                     label: '',
-                    altText: 'X (Twitter)',
+                    altText: 'Linkedin',
                     url: '/',
-                    icon: 'twitter'
-                },
-                {
-                    type: 'Social',
-                    label: '',
-                    altText: 'GitHub',
-                    url: '/',
-                    icon: 'github'
+                    icon: 'linkedin'
                 }
             ]
         },
