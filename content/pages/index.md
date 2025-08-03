@@ -38,14 +38,14 @@ sections:
       elementId: contact
       fields:
         - type: TextFormControl
-          name: firstName
+          name: firstname
           label: First Name
           hideLabel: true
           placeholder: First Name *
           isRequired: true
           width: 1/2
         - type: TextFormControl
-          name: lastName
+          name: lastname
           label: Last Name
           hideLabel: true
           placeholder: Last Name *
@@ -65,7 +65,7 @@ sections:
           placeholder: Company, Organization, Institution
           width: 1/2
         - type: TextareaFormControl
-          name: Message
+          name: message
           label: Message
           hideLabel: false
           placeholder: Tell me more... 💬
