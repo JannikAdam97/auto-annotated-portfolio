@@ -21,7 +21,7 @@ export default function FormBlock(props) {
 
     return (
         <Annotated content={props}>
-            <form className={className} name={elementId} id={elementId} onSubmit={handleSubmit} ref={formRef} data-netlify="true">
+            <form className={className} name={elementId} id={elementId} onSubmit={handleSubmit} ref={formRef} data-netlify="true" method="POST">
                 <div className="grid gap-6 sm:grid-cols-2">
                     <input type="hidden" name="form-name" value={elementId} />
                     {fields.map((field, index) => {
