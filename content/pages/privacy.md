@@ -19,9 +19,8 @@ sections:
       Data protection is important to me. This Privacy Policy explains how personal data is collected, used, and protected when you use the website cloudbuds.de.
 
       ## Controller and Contact
-      Jannik Adam  
-      c/o res‑ebert GmbH & Co. KG  
-      Festplatz 9, 76137 Karlsruhe, Germany  
+      Jannik Adam   
+      Röllergasse 1, 76889 Oberotterbach, Germany  
       E‑Mail: info@cloudbuds.de  
 
       ## Legal Basis & Purpose of Processing

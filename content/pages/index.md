@@ -35,7 +35,7 @@ sections:
     title: Got an interesting project?
     form:
       type: FormBlock
-      elementId: sign-up-form
+      elementId: contact
       fields:
         - type: TextFormControl
           name: firstName

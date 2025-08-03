@@ -18,10 +18,9 @@ sections:
       # Imprint
 
       **Jannik Adam**  
-      c/o res-ebert GmbH & Co. KG  
-      Kongresszentrum Karlsruhe  
-      Konferenzhaus – Festplatz 9  
-      D-76137 Karlsruhe  
+      Röllergasse 1 
+      76889 Oberotterbach
+      Germany
 
       E-Mail: [info@cloudbuds.de](mailto:info@cloudbuds.de)  
       Website: [www.cloudbuds.de](www.cloudbuds.de)
