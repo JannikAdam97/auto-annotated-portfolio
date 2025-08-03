@@ -5,7 +5,7 @@ slug: index
 colors: colors-a
 backgroundImage:
   type: BackgroundImage
-  url: /images/bg1.jpg
+  url: /images/bg5.png
   backgroundSize: cover
   backgroundPosition: center
   backgroundRepeat: no-repeat
