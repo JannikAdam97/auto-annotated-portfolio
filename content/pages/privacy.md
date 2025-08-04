@@ -20,8 +20,8 @@ sections:
 
       ## Controller and Contact
       **Jannik Adam**   
-      Röllergasse 1
-      76889 Oberotterbach
+      Röllergasse 1  
+      76889 Oberotterbach  
       Germany  
 
       E‑Mail: [info@cloudbuds.de](mailto:info@cloudbuds.de)  
