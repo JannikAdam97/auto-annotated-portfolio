@@ -18,9 +18,9 @@ sections:
       # Imprint
 
       **Jannik Adam**  
-      Röllergasse 1 
-      76889 Oberotterbach
-      Germany
+      Röllergasse 1  
+      76889 Oberotterbach  
+      Germany  
 
       E-Mail: [info@cloudbuds.de](mailto:info@cloudbuds.de)  
       Website: [www.cloudbuds.de](www.cloudbuds.de)

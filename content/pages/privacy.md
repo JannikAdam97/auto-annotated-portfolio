@@ -19,9 +19,13 @@ sections:
       Data protection is important to me. This Privacy Policy explains how personal data is collected, used, and protected when you use the website cloudbuds.de.
 
       ## Controller and Contact
-      Jannik Adam   
-      Röllergasse 1, 76889 Oberotterbach, Germany  
-      E‑Mail: info@cloudbuds.de  
+      **Jannik Adam**   
+      Röllergasse 1
+      76889 Oberotterbach
+      Germany  
+
+      E‑Mail: [info@cloudbuds.de](mailto:info@cloudbuds.de)  
+      Website: [www.cloudbuds.de](www.cloudbuds.de)
 
       ## Legal Basis & Purpose of Processing
       Server host logs (IP address, browser user agent, access timestamp, referrer URL, HTTP status):  
