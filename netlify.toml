@@ -4,3 +4,13 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+[[redirects]]
+  from = "/proxy.js"
+  to = "https://simpleanalyticsexternal.com/proxy.js?hostname=cloudbuds.de&path=/simple"
+  status = 200
+
+[[redirects]]
+  from = "/simple/*"
+  to = "https://queue.simpleanalyticscdn.com/:splat"
+  status = 200

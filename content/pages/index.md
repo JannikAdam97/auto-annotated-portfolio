@@ -16,14 +16,14 @@ sections:
     backgroundSize: full
     text: |+
       # Hello, my name is Jannik.
-      # I'm an IT Consultant and Senior SAP Developer.
+      # I'm a Technical Consultant and Developer.
       ### Nice to meet you.
     styles:
       self:
         height: auto
         width: narrow
         padding:
-          - pt-36
+          - pt-24
           - pb-16
           - pl-4
           - pr-4

@@ -11,15 +11,16 @@ backgroundImage:
   backgroundRepeat: no-repeat
   opacity: 75
 sections:
-  - elementId: ''
+  - type: HeroSection
+    elementId: ''
     colors: colors-f
     backgroundSize: full
     text: |+
-      # IT Consultant and Software Developer
+      # Technical Consultant and Developer
 
-      ## I am responsible for the strategic direction, architectural design, and hands-on implementation of high-quality processes and software solutions that deliver lasting value to my clients.
+      ## I drive IT innovation that delivers real value to my clients.
 
-      When I’m not coding, writing or creating, I eat cereals.
+      When I’m not coding, designing or creating, I eat cereals.
 
     media:
       type: ImageBlock
@@ -31,18 +32,12 @@ sections:
       self:
         height: auto
         width: wide
-        margin:
-          - mt-0
-          - mb-0
-          - ml-0
-          - mr-0
         padding:
-          - pt-16
-          - pb-12
+          - pt-24
+          - pb-16
           - pl-4
           - pr-4
         textAlign: left
-    type: HeroSection
   - type: DividerSection
     styles:
       self:
