@@ -4,17 +4,17 @@ title: Home
 slug: index
 metaTitle: "Jannik Adam – Freiberuflicher SAP Berater & Entwickler"
 metaDescription: "Freiberufliche SAP-Beratung und -Entwicklung. Ich helfe Unternehmen, ihre Prozesse zu optimieren und moderne Anwendungen aufzubauen."
-colors: colors-a
+colors: colors-b
 backgroundImage:
   type: BackgroundImage
-  url: /images/bg5.png
+  url: /images/bg1.jpg
   backgroundSize: cover
   backgroundPosition: center
   backgroundRepeat: no-repeat
   opacity: 75
 sections:
   - type: HeroSection
-    colors: colors-f
+    colors: colors-b
     backgroundSize: full
     title: Cloudbuds – Freiberuflicher SAP Berater & Entwickler
     subtitle: Maßgeschneiderte SAP-Beratung und Entwicklung für deine Geschäftsprozesse
@@ -22,10 +22,10 @@ sections:
       Ich unterstütze Unternehmen bei der Optimierung ihrer SAP-Landschaft – von ABAP über Fiori bis zur Integration moderner Cloud-Lösungen.
     actions:
       - type: Button
-        label: Projekt starten
+        label: Kontakt aufnehmen
         url: "/#contact"
       - type: Button
-        label: In 15 Min. mehr erfahren
+        label: Mehr erfahren
         url: "/about"
         style: secondary
     styles:
@@ -40,7 +40,7 @@ sections:
         flexDirection: row-reverse
         textAlign: left
   - type: ContactSection
-    colors: colors-f
+    colors: colors-b
     backgroundSize: full
     title: Got an interesting project?
     form:

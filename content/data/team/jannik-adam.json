@@ -4,7 +4,7 @@
     "lastName": "Adam",
     "image": {
         "type": "ImageBlock",
-        "url": "\\images\\Profilbild_Cyberpunk.jpeg",
+        "url": "/images/Profilbild_Cyberpunk.jpeg",
         "altText": "Picture of Jannik Adam"
     }
 }
