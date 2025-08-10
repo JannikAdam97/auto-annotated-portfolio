@@ -159,3 +159,18 @@ layer(base);
         background-size: 100% 100%;
     }
 }
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@utility animate-slide-in {
+    animation: slide-in 0.75s ease-out both;
+}
