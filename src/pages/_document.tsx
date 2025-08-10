@@ -1,10 +1,11 @@
 import { Head, Html, Main, NextScript } from 'next/document';
+import Script from 'next/script';
 
 export default function Document() {
   return (
     <Html lang="de">
       <Head>
-        <script async src="https://cloudbuds.de/proxy.js"></script>
+        <Script src="https://cloudbuds.de/proxy.js" strategy="lazyOnload" />
       </Head>
       <body>
         <Main />
