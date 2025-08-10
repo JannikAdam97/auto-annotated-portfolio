@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Annotated } from '@/components/Annotated';
 
 export default function ImageBlock(props) {
@@ -8,7 +9,16 @@ export default function ImageBlock(props) {
 
     return (
         <Annotated content={props}>
-            <img id={elementId || null} className={className} src={url} alt={altText} />
+            <Image
+                id={elementId || undefined}
+                className={className}
+                src={url}
+                alt={altText}
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: '100%', height: 'auto' }}
+            />
         </Annotated>
     );
 }

@@ -2,5 +2,14 @@
     "extends": "next/core-web-vitals",
     "rules": {
         "@next/next/no-img-element": "off"
-    }
+    },
+    "overrides": [
+        {
+            "files": ["**/__tests__/**"],
+            "rules": {
+                "react/display-name": "off",
+                "jsx-a11y/alt-text": "off"
+            }
+        }
+    ]
 }

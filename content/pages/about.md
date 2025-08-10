@@ -1,6 +1,6 @@
 ---
 type: PageLayout
-title: About
+title: Über mich
 slug: about
 colors: colors-a
 backgroundImage:
@@ -16,11 +16,11 @@ sections:
     colors: colors-f
     backgroundSize: full
     text: |+
-      # Technical Consultant and Developer
+      # Freiberuflicher SAP Berater & Entwickler
 
-      ## I drive IT innovation that delivers real value to my clients.
+      ## Ich begleite Unternehmen bei der Digitalisierung ihrer SAP-Landschaft.
 
-      When I’m not coding, designing or creating, I eat cereals.
+      Schwerpunkte: ABAP, SAPUI5/Fiori und Integration moderner Cloud-Lösungen.
 
     media:
       type: ImageBlock

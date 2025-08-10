@@ -1,17 +1,44 @@
 {
     "type": "Config",
     "favicon": "/images/favicon-32x32.png",
+    "titleSuffix": "Cloudbuds – Freiberuflicher SAP Berater & Entwickler",
+    "defaultMetaTags": [
+        {
+            "property": "og:type",
+            "content": "website"
+        }
+    ],
     "header": {
         "type": "Header",
         "headerVariant": "variant-c",
-        "isSticky": false,
+        "isSticky": true,
         "title": "Jannik Adam",
         "isTitleVisible": true,
         "primaryLinks": [
+                {
+                    "type": "Link",
+                    "label": "Über mich",
+                    "url": "/about"
+                },
+                {
+                    "type": "Link",
+                    "label": "Leistungen",
+                    "url": "/features"
+                },
             {
                 "type": "Link",
-                "label": "About",
-                "url": "/about"
+                "label": "Preise",
+                "url": "/pricing"
+            },
+            {
+                "type": "Link",
+                "label": "Blog",
+                "url": "/blog"
+            },
+            {
+                "type": "Link",
+                "label": "Kontakt",
+                "url": "/#contact"
             }
         ],
         "socialLinks": [
