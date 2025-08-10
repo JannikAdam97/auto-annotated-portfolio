@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://cloudbuds.de/sitemap.xml
+Sitemap: /sitemap.xml
