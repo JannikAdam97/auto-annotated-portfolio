@@ -5,6 +5,7 @@ module.exports = {
         '^@/(.*)$': '<rootDir>/src/$1'
     },
     setupFilesAfterEnv: ['<rootDir>/setupTests.ts'],
+    testPathIgnorePatterns: ['<rootDir>/e2e/'],
     globals: {
         'ts-jest': {
             tsconfig: {
@@ -13,4 +14,3 @@ module.exports = {
         }
     }
 };
-

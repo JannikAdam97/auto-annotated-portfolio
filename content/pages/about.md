@@ -2,10 +2,12 @@
 type: PageLayout
 title: Über mich
 slug: about
-colors: colors-a
+metaTitle: "Über mich – Jannik Adam – Freiberuflicher SAP Berater & Entwickler"
+metaDescription: "Erfahren Sie mehr über Jannik Adam, freiberuflicher SAP Berater & Entwickler, der Unternehmen bei der Digitalisierung ihrer SAP-Landschaft unterstützt."
+colors: colors-b
 backgroundImage:
   type: BackgroundImage
-  url: /images/bg4.jpg
+  url: /images/bg2.jpg
   backgroundSize: cover
   backgroundPosition: center
   backgroundRepeat: no-repeat
@@ -13,7 +15,7 @@ backgroundImage:
 sections:
   - type: HeroSection
     elementId: ''
-    colors: colors-f
+    colors: colors-b
     backgroundSize: full
     text: |+
       # Freiberuflicher SAP Berater & Entwickler
@@ -27,7 +29,7 @@ sections:
       altText: Picture of Jannik Adam
       caption: ''
       elementId: ''
-      url: \images\Profilbild_Cyberpunk.jpeg
+      url: /images/Profilbild_Cyberpunk.jpeg
     styles:
       self:
         height: auto
@@ -50,12 +52,12 @@ sections:
         borderWidth: 1
         borderStyle: solid
   - type: MediaGallerySection
-    colors: colors-f
+    colors: colors-b
     subtitle: 'I work with these folks:'
     images:
       - type: ImageBlock
       - type: ImageBlock
-        url: \images\Res-Ebert_Logo_Final.svg
+        url: /images/Res-Ebert_Logo_Final.svg
         altText: res-ebert
         caption: res-ebert
       - type: ImageBlock

@@ -18,6 +18,8 @@ export default function ImageBlock(props) {
                 height={0}
                 sizes="100vw"
                 style={{ width: '100%', height: 'auto' }}
+                loading="lazy"
+                decoding="async"
             />
         </Annotated>
     );
