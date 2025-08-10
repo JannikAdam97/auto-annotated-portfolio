@@ -49,6 +49,8 @@ function YouTubeVideo({ id, autoplay, loop, muted, controls }) {
         <iframe
             src={`https://www.youtube.com/embed/${id}?${queryParams}`}
             title="YouTube video player"
+            aria-label="YouTube video player"
+            loading="lazy"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -69,6 +71,8 @@ function VimeoVideo({ id, autoplay, loop, muted, controls }) {
         <iframe
             src={`https://player.vimeo.com/video/${id}?${queryParams}`}
             title="Vimeo video player"
+            aria-label="Vimeo video player"
+            loading="lazy"
             frameBorder="0"
             allowFullScreen
             className="absolute top-0 left-0 w-full h-full"
