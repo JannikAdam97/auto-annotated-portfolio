@@ -1,9 +1,37 @@
-export function seoGenerateMetaTags(page, site) {
-    let pageMetaTags = {};
+export interface MetaTag {
+    property: string;
+    content: string;
+    format: 'property' | 'name';
+}
+
+export interface PageData {
+    metaTitle?: string;
+    title?: string;
+    addTitleSuffix?: boolean;
+    metaTags?: { property?: string; content?: string }[];
+    __metadata: { modelName?: string; urlPath?: string };
+    excerpt?: string;
+    metaDescription?: string;
+    featuredImage?: { url?: string };
+    socialImage?: string;
+}
+
+export interface SiteData {
+    titleSuffix?: string;
+    defaultMetaTags?: { property?: string; content?: string }[];
+    defaultSocialImage?: string;
+    env?: { URL?: string };
+    favicon?: string;
+}
+
+export function seoGenerateMetaTags(page: PageData, site: SiteData): MetaTag[] {
+    let pageMetaTags: Record<string, string> = {};
 
     if (site.defaultMetaTags?.length) {
         site.defaultMetaTags.forEach((metaTag) => {
-            pageMetaTags[metaTag.property] = metaTag.content;
+            if (metaTag.property && metaTag.content) {
+                pageMetaTags[metaTag.property] = metaTag.content;
+            }
         });
     }
 
@@ -15,7 +43,9 @@ export function seoGenerateMetaTags(page, site) {
 
     if (page.metaTags?.length) {
         page.metaTags.forEach((metaTag) => {
-            pageMetaTags[metaTag.property] = metaTag.content;
+            if (metaTag.property && metaTag.content) {
+                pageMetaTags[metaTag.property] = metaTag.content;
+            }
         });
     }
 
@@ -33,7 +63,7 @@ export function seoGenerateMetaTags(page, site) {
     return metaTags;
 }
 
-export function seoGenerateTitle(page, site) {
+export function seoGenerateTitle(page: PageData, site: SiteData): string {
     let title = page.metaTitle ? page.metaTitle : page.title;
     if (site.titleSuffix && page.addTitleSuffix !== false) {
         title = `${title} - ${site.titleSuffix}`;
@@ -41,8 +71,8 @@ export function seoGenerateTitle(page, site) {
     return title;
 }
 
-export function seoGenerateMetaDescription(page, site) {
-    let metaDescription = null;
+export function seoGenerateMetaDescription(page: PageData, site: SiteData): string | null {
+    let metaDescription: string | null = null;
     // Blog posts use the exceprt as the default meta description
     if (page.__metadata.modelName === 'PostLayout') {
         metaDescription = page.excerpt;
@@ -54,8 +84,8 @@ export function seoGenerateMetaDescription(page, site) {
     return metaDescription;
 }
 
-export function seoGenerateOgImage(page, site) {
-    let ogImage = null;
+export function seoGenerateOgImage(page: PageData, site: SiteData): string | null {
+    let ogImage: string | null = null;
     // Use the sites default og:image field
     if (site.defaultSocialImage) {
         ogImage = site.defaultSocialImage;
