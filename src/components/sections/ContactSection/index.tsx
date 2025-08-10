@@ -11,7 +11,7 @@ export default function ContactSection(props) {
     const sectionAlign = styles.self?.textAlign ?? 'left';
     return (
         <Section elementId={elementId} colors={colors} backgroundSize={backgroundSize} styles={styles.self}>
-            <div className={classNames('flex gap-8', mapFlexDirectionStyles(styles.self?.flexDirection ?? 'row'))}>
+            <div className={classNames('flex gap-8 animate-slide-in', mapFlexDirectionStyles(styles.self?.flexDirection ?? 'row'))}>
                 <div className="flex-1 w-full">
                     {title && (
                         <h2 className={classNames('text-4xl sm:text-5xl', mapStyles({ textAlign: sectionAlign }))}>
