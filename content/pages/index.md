@@ -24,10 +24,29 @@ sections:
         width: narrow
         padding:
           - pt-24
-          - pb-16
+          - pb-8
           - pl-4
           - pr-4
         flexDirection: row-reverse
+        textAlign: left
+  - type: CtaSection
+    actions:
+      - type: Button
+        label: Book a free call
+        url: https://calendly.com/cloudbuds/beratung
+        style: secondary
+    colors: colors-f
+    backgroundSize: full
+    styles:
+      self:
+        height: auto
+        width: narrow
+        padding:
+          - pt-4
+          - pb-4
+          - pl-4
+          - pr-4
+        flexDirection: row
         textAlign: left
   - type: ContactSection
     colors: colors-f

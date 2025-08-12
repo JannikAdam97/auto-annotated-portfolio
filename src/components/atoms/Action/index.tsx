@@ -25,7 +25,8 @@ export default function Action(props) {
     if (type === 'Button') {
         label ? baseClasses.push('py-4 px-5') : baseClasses.push('p-4');
         style === 'secondary' && baseClasses.push('rounded-full');
-        baseClasses.push('border-2 border-current hover:bottom-shadow-6 hover:-translate-y-1.5');
+        baseClasses.push('bg-orange-500 text-white hover:bg-orange-600 shadow-lg transition');
+        // baseClasses.push('border-2 border-current hover:bottom-shadow-6 hover:-translate-y-1.5');
     } else {
         baseClasses.push('uppercase bottom-shadow-1 hover:bottom-shadow-5');
     }
