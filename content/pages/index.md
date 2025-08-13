@@ -32,8 +32,8 @@ sections:
   - type: CtaSection
     actions:
       - type: Button
-        label: Book a free call
-        url: https://calendly.com/cloudbuds/beratung
+        label: Book a call
+        url: https://outlook.office.com/bookwithme/user/134da9ab1ad04877befb74c452e20eb9@cloudbuds.de/meetingtype/xsVMpKpCNUinqor4MNmofw2?anonymous&ismsaljsauthenabled&ep=mlink
         style: secondary
     colors: colors-f
     backgroundSize: full
